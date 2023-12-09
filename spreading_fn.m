@@ -16,14 +16,5 @@ x_interp = linspace(x1, x2);
 % Evaluate the fitted parabola at the interpolated x-grid
 y_interp = a * (x_interp - vertexX).^2 + vertexY;
 
-% Plot the original points and the fitted parabola
-% plot(x_interp, y_interp, 'b-', 'LineWidth', 2); % Blue line for fitted parabola
 
-% Add labels and title
-% xlabel('x');
-% ylabel('y');
-% title('Fitting a Concave-Up Parabola');
-% 
-% % Add a legend
-% legend('Fitted Parabola', 'First Point', 'Midpoint');
 end
