@@ -1,0 +1,12 @@
+function [freq_signal] = windowed_FFT(signal,N)
+%UNTITLED2 Summary of this function goes here
+%   Detailed explanation goes here
+freq_signal = zeros(1,N);
+seg_num = ceil(length(signal)/N);
+extended_signal = zeros(1,N);
+
+
+
+freq_signal = freq_signal/seg_num;
+
+end
