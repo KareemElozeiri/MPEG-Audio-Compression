@@ -16,6 +16,7 @@ else
         peakValues(end+1) = maxValue;
         peakIndices(end+1) = maxIndex;
     end
+
 end
 
 end
