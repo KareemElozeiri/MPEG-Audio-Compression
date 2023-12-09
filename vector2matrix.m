@@ -1,5 +1,5 @@
 function sub_band_Matrix = vector2matrix(vector,num_sub_bands)
-% divide2sub_bands function convert each band into matrix where each col is
+% vector2matrix function convert each band into matrix where each row is
 % a sub-band with length l
 
 % Length of each sub_band
