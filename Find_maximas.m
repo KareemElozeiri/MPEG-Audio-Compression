@@ -1,13 +1,13 @@
 function [peakValues,peakIndices] = Find_maximas(vector)
-%UNTITLED6 Summary of this function goes here
-%   Detailed explanation goes here
+
 % Find max in the vector
 maxValue = max(vector);
+% if the max SPL is zero set zero at the beginning and return
 if maxValue == 0
     peakValues = 0;
     peakIndices = 1;
-
 else
+    % get the index of the max value
     maxIndex = find(vector==maxValue);
     % Find the peaks in the vector
     [peakValues, peakIndices] = findpeaks(vector);
@@ -16,6 +16,7 @@ else
         peakValues(end+1) = maxValue;
         peakIndices(end+1) = maxIndex;
     end
+
 end
 
 end
