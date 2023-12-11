@@ -3,7 +3,7 @@ function PQMF_Coeffs = PQMF_ReadCoeffs()
 % the subbands filter, as in the standard
 
 % Inputs: N/A
-% Outputs: PQMF_Coeffs : the filter coefficients [0:256]
+% Outputs: PQMF_Coeffs : the filter coefficients
 
 coeff_file = fopen('filters.txt','r');
 formatSpecs='%f';
